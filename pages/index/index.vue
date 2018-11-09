@@ -1,26 +1,35 @@
 <template>
 	<view class="content">
-        <text class="title">{{title}}</text>
-        <text v-on:click="changeMessage">{{message}}</text>
+        <select v-model="selected">
+            <option value="1">一</option>
+            <option value="2">二</option>
+            <option value="3">三</option>
+        </select>
 	</view>
 </template>
 
 <script>
+    // import myComponent from "../../components/myComponent"
 	export default {
+	    elements: "#example-3",
 		data() {
 			return {
-				title: 'Hello',
-                message: "tom"
+			    select : ''
 			};
 		},
-		methods() {
-
-        }
+		methods: {
+            showAlert: function () {
+                console.log(111)
+            }
+        },
+        // components: {
+		//     myComponent
+        // }
 	}
 </script>
 
 <style>
-    @import "../common/common.css";
+    @import "../../common/css/common.css";
 	.content {
 		flex: 1;
 		justify-content: center;
@@ -31,4 +40,8 @@
 		font-size: 36upx;
 		color: #8f8f94;
 	}
+    
+    input {
+        background: #f00;
+    }
 </style>

@@ -1,6 +1,9 @@
 <template name="21dadfb6">
   <view class="_view data-v-28bfdcf4 content">
-    <text class="_text data-v-28bfdcf4 title">{{title}}</text>
-    <text bindtap="handleProxy" data-eventid="{{'GQh-0'}}" data-comkey="{{$k}}" class="_text data-v-28bfdcf4">{{message}}</text>
+    <picker value="{{selected}}" bindchange="handleProxy" data-eventid="{{'qgY-0'}}" data-comkey="{{$k}}" class="_select data-v-28bfdcf4">
+      <view value="1" class="_option data-v-28bfdcf4">一</view>
+      <view value="2" class="_option data-v-28bfdcf4">二</view>
+      <view value="3" class="_option data-v-28bfdcf4">三</view>
+    </picker>
   </view>
 </template>
