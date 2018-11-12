@@ -10,10 +10,12 @@
   -webkit-align-items: center;
   align-items: center;
 }
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
+.fade-enter-active,
+.fade-leave-active {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
 }
-._input {
-  background: #f00;
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }

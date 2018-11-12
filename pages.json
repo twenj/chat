@@ -1,16 +1,32 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
+			"path": "pages/msg/index"
+		}, {
+			"path": "pages/book/index"
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "chat",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#4283D9",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list":[{
+			"pagePath": "pages/msg/index",
+			"iconPath": "static/image/icon_msg.png",
+			"selectedIconPath": "static/image/icon_msg_HL.png",
+			"text": "消息"
+		}, {
+			"pagePath": "pages/book/index",
+			"iconPath": "static/image/icon_book.png",
+			"selectedIconPath": "static/image/icon_book_HL.png",
+			"text": "通讯录"
+		}]
 	}
 }

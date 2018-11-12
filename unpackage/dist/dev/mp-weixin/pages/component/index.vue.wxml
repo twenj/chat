@@ -1,0 +1,9 @@
+<template name="6eb16e90">
+  <view class="_view data-v-443dbbdf page-body">
+    <view class="_view data-v-443dbbdf btn-area">
+      <navigator url="view/index" hover-class="navigator-hover" class="_navigator data-v-443dbbdf">
+        <button type="default" class="_button data-v-443dbbdf">跳转页面</button>
+      </navigator>
+    </view>
+  </view>
+</template>

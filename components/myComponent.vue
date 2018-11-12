@@ -1,6 +1,8 @@
 <template>
     <view>
-        {{item.title}}
+        123
+        <slot name="header">i hope</slot>
+        <slot name="joe"></slot>
     </view>
 </template>
 
