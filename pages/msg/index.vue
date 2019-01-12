@@ -1,18 +1,29 @@
 <template>
-    <view class="page-body">
-        <view class="btn-area">
-            <navigator url="view/index" hover-class="navigator-hover">
-                <button type="default">跳转页面</button>
-            </navigator>
-        </view>
+    <view class="box">
+      <view class="item">
+        <text>空山灵雨</text>
+      </view>
+      <view class="item"></view>
+      <view class="item"></view>
     </view>
 </template>
+
 <script>
-    export default {
-        data() {
-            return {
-                message: "hello joe"
-            }
-        }
-    }
+
 </script>
+<style>
+  .box {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .item {
+    width:100%;
+    height: 100upx;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+  }
+  .box:first-child {
+    border-top: 1px solid rgba(0,0,0,.2);
+  }
+</style>
